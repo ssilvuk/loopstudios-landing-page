@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as *;
+
+.card {
+    margin-top: 1.4rem;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgb(60, 60, 60);
+        background: linear-gradient(90deg, rgba(23, 23, 23, 0.738) 0%, rgba(255, 255, 255, 0) 51%);
+    }
+
+    p {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        z-index: 10;
+    }
+}

@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 1.5rem;
+}
+
+.nav-toggle-open,
+.nav-toggle-close {
+    height: 1rem;
+}
+
+.nav-toggle-close {
+    display: none;
+}
+
+@media (max-width: 89.94em) {
+    .nav-items {
+        display: none;
+    }
+}

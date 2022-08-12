@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as *;
+
+body {
+    background-color: lightgrey;
+}
+
+.container {
+    background: var(--clr-white);
+}
