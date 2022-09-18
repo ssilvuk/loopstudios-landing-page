@@ -1,20 +1,12 @@
 @use "../abstracts/variables" as *;
-
 .button {
-    width: max-content;
     cursor: pointer;
-    padding-block: 12px;
-    padding-inline: 41px;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-300);
-    font-weight: var(--fw-regular);
-    text-transform: uppercase;
-    letter-spacing: 0.313rem;
-    background-color: var(--clr-white);
-    border: 1px solid var(--clr-black);
+    padding: 10px 38px;
+    background-color: transparent;
+    border: 1px solid hsl(var(--clr-dark));
+}
 
-    &:hover :focus {
-        color: var(--clr-white);
-        background-color: var(--clr-black);
-    }
+.button:hover {
+    color: hsl(var(--clr-light));
+    background-color: hsl(var(--clr-dark));
 }
